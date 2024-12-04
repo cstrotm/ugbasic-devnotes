@@ -1,0 +1,9 @@
+BITMAP ENABLE (160,200,16)
+
+CLS
+FOR i=0 TO 40 
+    r = ( SCREEN WIDTH / 4 - i*2 )
+    IF r > 0 THEN
+        CIRCLE SCREEN WIDTH / 2,SCREEN HEIGHT / 2, r
+    ENDIF
+NEXT
