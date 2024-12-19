@@ -1,0 +1,23 @@
+* ugBASIC Entwicklernotizen
+
+[English version below]
+
+[[https://ugbasic.iwashere.eu][ugBASIC]] ist ein Basic-Cross-Compiler für Homecomputer.
+
+** Meine ugBASIC Entwicklungsumgebung
+
+Als Benutzer des [[https://emacs.org][Emacs]] Editors, ich schreibe meine ugBASIC Programm im Emacs.
+
+Der =basic-mode= im Emacs sorgt für Syntax-Highlighting. Mittels eines
+Emacs Kommandos
+(https://www.gnu.org/software/emacs/manual/html_node/emacs/Compilation.html)
+welches auf eine Tastenkombination gelegt ist, wird der ugBASIC-Compiler gestartet.
+
+[[./emacs.png]]
+
+ugBASIC erstellt eine Standard Atari COM-Datei, welche ich dann in
+einen Atari800 Emulator lade um das Programm zu testen.
+
+Gleichzeitig wird das Verzeichnis mit der COM-Datei via TNFS-Server im
+Netzwerk exportiert, so das die COM-Dateien direkt via FujiNet in
+echte Atari 8-Bit Hardware geladen und getestet werden kann.
