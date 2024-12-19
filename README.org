@@ -21,3 +21,25 @@ einen Atari800 Emulator lade um das Programm zu testen.
 Gleichzeitig wird das Verzeichnis mit der COM-Datei via TNFS-Server im
 Netzwerk exportiert, so das die COM-Dateien direkt via FujiNet in
 echte Atari 8-Bit Hardware geladen und getestet werden kann.
+
+* ugBASIC developer notes
+
+[[https://ugbasic.iwashere.eu][ugBASIC]] is a Basic cross-compiler for home computers.
+
+** My ugBASIC development environment
+
+As a user of the [[https://emacs.org][Emacs]] Editor, I write my ugBASIC program in Emacs.
+
+The =basic-mode= in Emacs provides syntax highlighting. By means of an
+Emacs command
+(https://www.gnu.org/software/emacs/manual/html_node/emacs/Compilation.html),
+which is assigned to a key combination, the ugBASIC compiler is started.
+
+[[./emacs.png]]
+
+ugBASIC creates a standard Atari COM file, which I then load into an
+Atari800 emulator to test the program.
+
+At the same time the directory with the COM file is exported via TNFS server in the
+network, so that the COM files can be loaded directly via FujiNet into a
+real Atari 8-bit hardware and can be tested.
